@@ -1,13 +1,12 @@
-#!/usr/bin/env python
-# coding: utf-8
+'''
+PS1 Data:
+Authors
+- David W Hogg (NYU)
+- Clark Miyamoto (NYU)
+- Sarah Odeh (NYU)
 
-# # PS1 Data
-# Authors
-# - David W Hogg (NYU)
-# - Clark Miyamoto (NYU)
-# - Sarah Odeh (NYU)
-
-# See 'my understanding of the workflow, step 1' for explanations
+See 'my understanding of the workflow, step 1' for explanations
+'''
 
 import numpy as np
 from astropy.io import fits 
