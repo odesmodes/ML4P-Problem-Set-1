@@ -1,0 +1,4 @@
+# Ignore the following data files bc they are too large:
+
+*.npy
+*.fits
