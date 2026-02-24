@@ -68,10 +68,8 @@ with torch.no_grad():
     train_loss = loss_fn(train_preds, Y_train)
     valid_loss = loss_fn(valid_preds, Y_valid)
 
-'''    
 print(f"Train Loss: {train_loss.item():.4f}")
 print(f"Valid Loss: {valid_loss.item():.4f}")
-'''
 
 '''
 # early stopping (to decide on epoch range)
@@ -106,4 +104,8 @@ plt.title('Linear Regression: Predicted vs True LOGG')
 plt.legend()
 plt.savefig('linear_regression.png')
 
-
+# test (RUN ONLY WHEN READY)
+with torch.no_grad():
+    test_preds = model(X_test)
+    test_loss = loss_fn(test_preds, Y_test)
+print(f"Test Loss: {test_loss.item():.4f}")

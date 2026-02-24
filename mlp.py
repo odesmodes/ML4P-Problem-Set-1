@@ -106,3 +106,9 @@ plt.ylabel('Predicted LOGG')
 plt.title('Linear Regression: Predicted vs True LOGG')
 plt.legend()
 plt.savefig('mlp.png')
+
+with torch.no_grad():
+    model.eval()
+    test_preds = model(X_test)
+    test_loss = loss_fn(test_preds, Y_test)
+print(f"Test Loss: {test_loss.item():.4f}")
