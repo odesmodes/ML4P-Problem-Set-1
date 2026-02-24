@@ -80,6 +80,8 @@ print(len(train_labels), len(valid_labels), len(test_labels))
 
 
 train_labels_logg = train_labels['LOGG']
+valid_labels_logg = valid_labels['LOGG']
+test_labels_logg = test_labels['LOGG']
 print(train_labels_logg.shape) # (num_spectra, 1)
 
 # # Get the Features
